@@ -1,0 +1,399 @@
+.presentacion_serv {
+  width: 100%;
+
+  .titulo_serv {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    color: $rojo;
+    font-weight: bold;
+  }
+
+  .parrafo_serv {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 3.6rem;
+
+    p {
+      padding: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.caracteristicas_serv {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .car_serv {
+    width: 33%;
+    padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .img_serv_car {
+      text-align: center;
+
+      img {
+        width: 8rem;
+      }
+    }
+
+    .tit_serv_car {
+      text-align: center;
+      padding: 1.2rem;
+      color: $celeste;
+      font-size: 1.7rem;
+    }
+
+    .parr_serv_car {
+      text-align: center;
+      padding: 1rem;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.planes_serv {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  .titulo_planes {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    color: $naranja;
+    font-weight: bold;
+  }
+
+  .plan {
+    display: inline-grid;
+    width: 49%;
+    padding: 1rem;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .linea_naranja {
+      border: 1px solid $naranja;
+    }
+
+    .linea_rojo {
+      border: 1px solid $rojo;
+    }
+
+    .marco_plan {
+      border-radius: 2.1rem;
+      width: 100%;
+      max-width: 30rem;
+      margin: 0 auto 1rem auto;
+
+      .back_naranja {
+        background-color: $naranja;
+      }
+
+      .back_rojo {
+        background-color: $rojo;
+      }
+
+      .titulo_plan {
+        text-align: center;
+        font-size: 1.9rem;
+        padding: 1.4rem;
+        border-radius: 2rem 2rem 0 0;
+        color: $white;
+        font-weight: bold;
+      }
+
+      .lista_plan {
+        width: 100%;
+
+        .centrado {
+          text-align: center;
+        }
+
+        ul {
+          padding: 0;
+          list-style-position: inside;
+
+          li {
+            font-size: 1.3rem;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+            &.li_naranja {
+              border-bottom: 1px solid $naranja;
+            }
+
+            &.li_rojo {
+              border-bottom: 1px solid $rojo;
+            }
+
+            &.vacio {
+              list-style: none;
+            }
+          }
+        }
+      }
+
+      .precio_plan {
+        width: 100%;
+        text-align: center;
+
+        .preciop {
+          font-size: 5rem;
+          font-weight: bold;
+        }
+
+        .mensp {
+          font-size: 1.7rem;
+          padding: 0 0 0.4rem 0;
+          font-weight: bold;
+        }
+      }
+
+      .lt_naranja {
+        color: $naranja;
+      }
+
+      .lt_roja {
+        color: $rojo;
+      }
+
+      .arreglo {
+        font-size: 3rem;
+      }
+    }
+
+    .suscribirsep {
+      text-align: center;
+      padding: 1rem;
+
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        color: $black;
+        font-weight: bold;
+        background: $lightergrey;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+.caracteristicas {
+  width: 100%;
+  max-width: 100rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  .caracteristica {
+    width: 33%;
+    padding: 3rem;
+
+    .imagen {
+      height: 8rem;
+      text-align: center;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    .titulo {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    .contenido {
+      font-size: 1.4rem;
+      padding: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $verde;
+    }
+  }
+
+  .link {
+    text-align: center;
+  }
+}
+
+.articulo {
+  width: 100%;
+  border-bottom: 1px solid $lightergrey;
+  margin-top: 0.5rem;
+
+  .titulo_gen {
+    text-align: center;
+    font-size: 2.2rem;
+    color: $celeste;
+    padding: 0 2rem 2rem 2rem;
+    font-weight: bold;
+  }
+
+  .foto {
+    width: 100%;
+  }
+
+  .texto {
+    width: 100%;
+
+    .cont {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.youtube {
+  width: 100%;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+.titulo_pagina {
+  font-size: 2.1rem;
+  font-weight: bold;
+  padding: 2rem 0 1.5rem 1.4rem;
+  color: $azul;
+  text-align: center;
+}
+
+.solo_texto {
+  padding: 2rem;
+  font-size: 1.4rem;
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+
+  .int {
+    padding: 0 1.7rem;
+  }
+
+  .tit {
+    padding: 1rem 2rem;
+  }
+
+  .procon {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    color: $naranja;
+  }
+
+  .resumen {
+    font-size: 1.4rem;
+    padding: 0;
+    color: $dark_grey;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+    padding: 0.8rem;
+    color: $rojo;
+    font-weight: bold;
+  }
+}
+
+.paquetes {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .paquete {
+    width: 33%;
+    padding: 3rem;
+    box-sizing: border-box;
+
+    .titulo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $white;
+      text-align: center;
+      padding: 3.2rem;
+      border-radius: 0.5rem;
+    }
+
+    .contenido {
+      font-size: 1.4rem;
+
+      ul {
+        padding: 1rem 3rem;
+
+        li {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+
+    .precio {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .bazul {
+      background-color: $azul;
+    }
+
+    .bceleste {
+      background-color: $celeste;
+    }
+
+    .bverde {
+      background-color: $verde;
+    }
+  }
+
+  .datos {
+    width: 100%;
+
+    .texto {
+      padding: 0 2.5rem;
+
+      ul {
+        padding: 2.5rem;
+
+        li {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
+
+.espera {
+  padding: 2.4rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,152 @@
+header {
+  width: 100%;
+  box-shadow: 1px 1px 10px -5px $black;
+  position: fixed;
+  background-color: $white;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo {
+    width: 15rem;
+
+    img {
+      height: 7.5rem;
+      width: auto;
+    }
+  }
+
+  .menu {
+    width: calc(75% - 15rem);
+
+    img {
+      width: 1rem;
+    }
+
+    nav {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: calc(100% - 85px);
+        margin: 5rem 0 0 0;
+        position: fixed;
+        left: -100%;
+        background-color: $white_trans;
+        overflow: scroll;
+        z-index: 10;
+      }
+
+      ul {
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        li {
+          padding: 1.5rem;
+
+          @media screen and (max-width: 768px) {
+            display: block;
+            border-bottom: 1px solid $dark_grey;
+            padding: 1.7rem;
+          }
+
+          a {
+            font-size: 1.4rem;
+            color: $celeste;
+            text-decoration: none;
+            font-weight: bold;
+          }
+
+          &:hover {
+            .children {
+              display: block;
+
+              @media screen and (max-width: 768px) {
+                display: none;
+              }
+            }
+          }
+
+          .children {
+            display: none;
+            background: $white;
+            position: absolute;
+            margin: 1rem 0;
+            padding: 0.5rem 1.5rem;
+            z-index: 10;
+            border-radius: 0 0 1rem 1rem;
+
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              position: relative;
+            }
+
+            li {
+              display: block;
+              padding: 0.8rem;
+
+              @media screen and (max-width: 768px) {
+                border-bottom: none;
+              }
+
+              a {
+                font-size: 1.3rem;
+                color: $celeste;
+                text-decoration: none;
+                padding-left: 0;
+                font-weight: normal;
+
+                @media screen and (max-width: 768px) {
+                  margin-left: 2rem;
+                }
+
+                &:hover {
+                  color: $white;
+                  text-decoration: none;
+                }
+              }
+
+              &:hover {
+                background-color: $celeste;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .wa {
+    width: 25%;
+    text-align: end;
+    font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+      width: 30%;
+    }
+
+    .numero {
+      padding: 1.5rem;
+      font-size: 1.7rem;
+
+      a {
+        color: $rojo;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu_mob {
+      width: 7rem;
+
+      img {
+        height: 7.5rem;
+        width: auto;
+      }
+    }
+  }
+}

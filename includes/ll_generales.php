@@ -7,111 +7,110 @@ function doctype()
         $reg = $_GET['reg'];
     }
     ?>
+    <!DOCTYPE html>
+    <html lang="es">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limalocal 2024</title>
-    <link rel="icon" type="image/png" href="images/ll_pic.png" />
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/floating-wpp.css">
-    <link href="css/limalocal2022.css" rel="stylesheet" type="text/css">
-    <link href="css/limalocal800.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/floating-wpp.js"></script>
-    <script src="js/menu.js"></script>
-    <?php
-    include_once "includes/analyticstracking.php";
-
-    if ($reg == 'exito') {
-        ?>
-    <!-- Event snippet for Solicitud de información conversion page -->
-    <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-1070647363/a8SbCPWFy5IBEMOQw_4D'
-        });
-    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limalocal 2024</title>
+        <link rel="icon" type="image/png" href="images/ll_pic.png" />
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/floating-wpp.css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/floating-wpp.js"></script>
+        <script src="js/menu.js"></script>
         <?php
-    }
-    ?>
+        include_once "includes/analyticstracking.php";
+
+        if ($reg == 'exito') {
+            ?>
+            <!-- Event snippet for Solicitud de información conversion page -->
+            <script>
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-1070647363/a8SbCPWFy5IBEMOQw_4D'
+                });
+            </script>
+            <?php
+        }
+        ?>
     </head>
 
     <body>
-    <?php
-    if ($reg == 'exito') {
-        ?>
-    <script>
-        fbq('track', 'CompleteRegistration', {
-            value: '3.00',
-            currency: 'PEN'
-        });
-    </script>
         <?php
-    }
+        if ($reg == 'exito') {
+            ?>
+            <script>
+                fbq('track', 'CompleteRegistration', {
+                    value: '3.00',
+                    currency: 'PEN'
+                });
+            </script>
+            <?php
+        }
 }
 
 function ll_header()
 {
     ?>
-    <header>
-        <div class="logo">
-            <a href="index.php">
-                <img src="images/svg/limalocal.svg" alt="limalocal">
-            </a>
-        </div>
-        <div class="menu_mob mob">
-            <img src="images/svg/menu.svg" alt="menu">
-        </div>
-    <?php
-    menu();
-    ?>
-        <div class="wa">
-            <div class="numero">
-                <a href="https://api.whatsapp.com/send?phone=51999220204" target="_blank">
-                    Whatsapp 999220204
+        <header>
+            <div class="logo">
+                <a href="index.php">
+                    <img src="images/svg/limalocal.svg" alt="limalocal">
                 </a>
             </div>
-        </div>
-    </header>
+            <div class="menu_mob mob">
+                <img src="images/svg/menu.svg" alt="menu">
+            </div>
+        <?php
+        menu();
+        ?>
+            <div class="wa">
+                <div class="numero">
+                    <a href="https://api.whatsapp.com/send?phone=51999220204" target="_blank">
+                        Whatsapp 999220204
+                    </a>
+                </div>
+            </div>
+        </header>
         <div class="contenedor">
-    <?php
+        <?php
 }
 
 function menu()
 {
     ?>
-    <div class="menu">
-        <nav>
-            <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li class="submenu"><a href="#">Nosotros <img src="images/svg/iconos/flecha.svg"></a>
-                    <ul class="children">
-                        <li><a href="index.php?acc=vender">¿Cómo vender por internet?</a></li>
-                        <li><a href="index.php?acc=clientes">Nuestros clientes</a></li>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.php">Inicio</a></li>
+                        <li class="submenu"><a href="#">Nosotros <img src="images/svg/iconos/flecha.svg"></a>
+                            <ul class="children">
+                                <li><a href="index.php?acc=vender">¿Cómo vender por internet?</a></li>
+                                <li><a href="index.php?acc=clientes">Nuestros clientes</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu"><a href="#">Servicios <img src="images/svg/iconos/flecha.svg"></a>
+                            <ul class="children">
+                                <li><a href="servicios.php?acc=alquila">Alquila una tienda virtual</a></li>
+                                <li><a href="servicios.php?acc=compra">Compra una tienda virtual</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu"><a href="#">Mi Tienda Virtual <img src="images/svg/iconos/flecha.svg"></a>
+                            <ul class="children">
+                                <li><a href="mitienda.php?acc=perfil">Mi Perfil</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu"><a href="#">Contacto <img src="images/svg/iconos/flecha.svg"></a>
+                            <ul class="children">
+                                <li><a href="contacto.php">Solicita una asesoría virtual</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li class="submenu"><a href="#">Servicios <img src="images/svg/iconos/flecha.svg"></a>
-                    <ul class="children">
-                        <li><a href="servicios.php?acc=alquila">Alquila una tienda virtual</a></li>
-                        <li><a href="servicios.php?acc=compra">Compra una tienda virtual</a></li>
-                    </ul>
-                </li>
-                <li class="submenu"><a href="#">Mi Tienda Virtual <img src="images/svg/iconos/flecha.svg"></a>
-                    <ul class="children">
-                        <li><a href="mitienda.php?acc=perfil">Mi Perfil</a></li>
-                    </ul>
-                </li>
-                <li class="submenu"><a href="#">Contacto <img src="images/svg/iconos/flecha.svg"></a>
-                    <ul class="children">
-                        <li><a href="contacto.php">Solicita una asesoría virtual</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
+                </nav>
+            </div>
     <?php
 }
 
@@ -155,48 +154,48 @@ function formulario()
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         enviar_mensaje_filtrado();
     } else { ?>
-    <form action="index.php?reg=exito" enctype="multipart/form-data" method="post">
-        <div class="dato">
-            <input name="nombre_form" type="text" placeholder="Nombre" required>
-        </div>
-        <div class="dato">
-            <input name="mail_form" type="email" placeholder="Correo Electrónico" required>
-        </div>
-        <div class="dato">
-            <input name="fono_form" type="number" placeholder="Teléfono" required>
-        </div>
-        <div class="dato">
-            <textarea name="mensaje_txt" placeholder="Déjanos tu mensaje" required></textarea>
-        </div>
-        <div class="checkbox">
-            <div class="reclame">¿Qué día prefieres que te contactemos?:</div>
-        </div>
-        <div class="dato">
-            <input 
-                type="date" 
-                id="start" 
-                name="fecha_cont" 
-                value="<?php echo $hoy ?>" 
-                min="<?php echo $hoy ?>" 
-                required
-            >
-        </div>
-        <div class="check">
-            <input type="radio" name="negocio_txt" value="fisicayredes" checked>
-            Tengo una tienda Física y vendo por redes sociales
-        </div>
-        <div class="check">
-            <input type="radio" name="negocio_txt" value="solofisica">
-            Vendo sólo en mi Tienda Física
-        </div>
-        <div class="check">
-            <input type="radio" name="negocio_txt" value="soloredes">
-            Vendo sólo por redes sociales
-        </div>
-        <div class="dato">
-            <button type="submit">Solicitar una cita</button>
-        </div>
-    </form>
+        <form action="index.php?reg=exito" enctype="multipart/form-data" method="post">
+            <div class="dato">
+                <input name="nombre_form" type="text" placeholder="Nombre" required>
+            </div>
+            <div class="dato">
+                <input name="mail_form" type="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="dato">
+                <input name="fono_form" type="number" placeholder="Teléfono" required>
+            </div>
+            <div class="dato">
+                <textarea name="mensaje_txt" placeholder="Déjanos tu mensaje" required></textarea>
+            </div>
+            <div class="checkbox">
+                <div class="reclame">¿Qué día prefieres que te contactemos?:</div>
+            </div>
+            <div class="dato">
+                <input 
+                    type="date" 
+                    id="start" 
+                    name="fecha_cont" 
+                    value="<?php echo $hoy ?>" 
+                    min="<?php echo $hoy ?>" 
+                    required
+                >
+            </div>
+            <div class="check">
+                <input type="radio" name="negocio_txt" value="fisicayredes" checked>
+                Tengo una tienda Física y vendo por redes sociales
+            </div>
+            <div class="check">
+                <input type="radio" name="negocio_txt" value="solofisica">
+                Vendo sólo en mi Tienda Física
+            </div>
+            <div class="check">
+                <input type="radio" name="negocio_txt" value="soloredes">
+                Vendo sólo por redes sociales
+            </div>
+            <div class="dato">
+                <button type="submit">Solicitar una cita</button>
+            </div>
+        </form>
     <?php }
 }
 
@@ -210,8 +209,8 @@ function vender()
             <div class="texto">
                 <div class="titulo">No pierdas más clientes</div>
                 <div class="cont">
-                    ¿Cuantas veces al día pierdes una venta por no coordinar con un cliente a tiempo? 
-                    ¿Te has preguntado cuántas ventas pierdes por que tus clientes no están 
+                    ¿Cuantas veces al día pierdes una venta por no coordinar con un cliente a tiempo?
+                    ¿Te has preguntado cuántas ventas pierdes por que tus clientes no están
                     dispuestos a perder tiempo coordinando vía Facebook o Whatsapp?
                 </div>
             </div>
@@ -220,10 +219,10 @@ function vender()
             <div class="foto"><img src="images/articulos/redes.jpg"></div>
             <div class="texto">
                 <div class="cont">
-                    La publicidad en redes sociales te ha permitido conocer a tus clientes 
-                    y crear una comunidad que ama tus productos. 
-                    Pero, seamos realistas. ¡Las redes sociales no son para vender! 
-                    Es importante que dirijas a tus clientes a un espacio en el que vean 
+                    La publicidad en redes sociales te ha permitido conocer a tus clientes
+                    y crear una comunidad que ama tus productos.
+                    Pero, seamos realistas. ¡Las redes sociales no son para vender!
+                    Es importante que dirijas a tus clientes a un espacio en el que vean
                     tus productos cómodamente y puedan adquirirlos de manera fácil.
                 </div>
             </div>
@@ -234,14 +233,14 @@ function vender()
                 <div class="titulo">¿Cómo vender por internet?</div>
                 <div class="subtitulo">Diseño moderno y limpio</div>
                 <div class="cont">
-                    Prioriza lo importante: ¡tus productos! Muéstralos en su máximo 
+                    Prioriza lo importante: ¡tus productos! Muéstralos en su máximo
                     potencial y sácale provecho a sus cualidades.
                 </div>
                 <div class="subtitulo">Oportunidades de venta</div>
                 <div class="cont">
-                    Sabías que la mitad de los consumidores consultó su smartphone antes de comprar 
-                    y el 38% se retiró de la tienda porque “encontró una mejor opción”. 
-                    ¡Tus productos son esa mejor opción! Tu tienda virtual 
+                    Sabías que la mitad de los consumidores consultó su smartphone antes de comprar
+                    y el 38% se retiró de la tienda porque “encontró una mejor opción”.
+                    ¡Tus productos son esa mejor opción! Tu tienda virtual
                     estará abierta todos los días y a toda hora.
                 </div>
             </div>
@@ -251,8 +250,8 @@ function vender()
             <div class="texto">
                 <div class="titulo">Enlaza tus redes sociales</div>
                 <div class="cont">
-                    Te ayudamos a vincular tus campañas publicitarias y todos tus esfuerzos de comunicación 
-                    con tu tienda virtual. Lo que te ayudará a simplificar el proceso de venta. 
+                    Te ayudamos a vincular tus campañas publicitarias y todos tus esfuerzos de comunicación
+                    con tu tienda virtual. Lo que te ayudará a simplificar el proceso de venta.
                 </div>
             </div>
         </div>
@@ -261,8 +260,8 @@ function vender()
             <div class="texto">
                 <div class="titulo">Pasarella de pago</div>
                 <div class="cont">
-                    Implementamos a tu Web todos los sistemas de pago que necesite tu negocio: 
-                    Paypal, Culqui, Visa, MasterCard, Pago efectivo, etc. 
+                    Implementamos a tu Web todos los sistemas de pago que necesite tu negocio:
+                    Paypal, Culqui, Visa, MasterCard, Pago efectivo, etc.
                 </div>
             </div>
         </div>
@@ -545,43 +544,43 @@ function enviar_mensaje_filtrado()
     //cuerpo del email:
     $cuerpoMensaje = "";
     $cuerpoMensaje = '
-<html>
-<head>
-<title>Solicitud de reunión - Limalocal.com</title>
-</head>
-<body>
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-<tr>
-<td colspan="2"><strong>Solicitud de reunión - Limalocal.com</strong></td>
-</tr>
-<tr>
-<td>Nombre:</td>
-<td>' . $nombre . '</td>
-</tr>
-<tr>
-<td>Email:</td>
-<td>' . $mail . '</td>
-</tr>
-<tr>
-<td>Fono:</td>
-<td>' . $fono . '</td>
-</tr>
-<tr>
-<td>Mensaje:</td>
-<td>' . $comentario . '</td>
-</tr>
-<tr>
-<td>Fecha:</td>
-<td>' . $fecha_cont . '</td>
-</tr>
-<tr>
-<td>Su negocio:</td>
-<td>' . $negocio . '</td>
-</tr>
-</table>
-</body>
-</html>   
-';
+    <html>
+    <head>
+    <title>Solicitud de reunión - Limalocal.com</title>
+    </head>
+    <body>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+    <td colspan="2"><strong>Solicitud de reunión - Limalocal.com</strong></td>
+    </tr>
+    <tr>
+    <td>Nombre:</td>
+    <td>' . $nombre . '</td>
+    </tr>
+    <tr>
+    <td>Email:</td>
+    <td>' . $mail . '</td>
+    </tr>
+    <tr>
+    <td>Fono:</td>
+    <td>' . $fono . '</td>
+    </tr>
+    <tr>
+    <td>Mensaje:</td>
+    <td>' . $comentario . '</td>
+    </tr>
+    <tr>
+    <td>Fecha:</td>
+    <td>' . $fecha_cont . '</td>
+    </tr>
+    <tr>
+    <td>Su negocio:</td>
+    <td>' . $negocio . '</td>
+    </tr>
+    </table>
+    </body>
+    </html>   
+    ';
     //fin cuerpo del email.
 
     //cabecera del email (forma correcta de codificarla)
@@ -618,5 +617,3 @@ function mensaje_error($msj)
     </div>
     <?php
 }
-
-?>

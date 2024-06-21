@@ -1,0 +1,58 @@
+.vender {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+
+  .articulo {
+    width: 100%;
+    border-bottom: 1px solid $lightergrey;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .foto {
+      width: 50%;
+      padding: 0 2rem;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+    }
+
+    .texto {
+      width: 50%;
+      padding: 2rem;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 2rem;
+      }
+
+      .titulo {
+        text-align: center;
+        color: $azul;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .subtitulo {
+        text-align: center;
+        color: $verde;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .cont {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

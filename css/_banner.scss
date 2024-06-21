@@ -1,0 +1,101 @@
+.bloque_banner {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .banners {
+    width: calc(100% - 30rem);
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .formulario {
+    width: 30rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+
+    .texto {
+      width: 100%;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+
+    .dato {
+      width: 100%;
+      text-align: center;
+
+      input {
+        margin: 0.4rem;
+        border: 1px solid $lightergrey;
+        font-size: 1.2rem;
+        padding: 0.4rem;
+        width: 75%;
+        max-width: 33rem;
+      }
+
+      textarea {
+        resize: none;
+        margin: 0.4rem;
+        border: 1px solid $lightergrey;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+        width: 75%;
+        max-width: 33rem;
+      }
+    }
+
+    .checkbox {
+      width: 75%;
+      margin: auto;
+      padding: 0;
+
+      .reclame {
+        color: $rojo;
+      }
+    }
+
+    .check {
+      width: 75%;
+      text-align: center;
+      margin: auto;
+      padding: 0.5rem;
+      display: flex;
+    }
+
+    button {
+      padding: 0.7rem;
+      border-radius: 0.4rem;
+      border: 0;
+      width: 64%;
+      color: $white;
+      font-size: 2rem;
+      background-color: $amarillo;
+      cursor: pointer;
+      max-width: 33rem;
+    }
+  }
+}
+
+.banner_sec {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  margin-bottom: 3rem;
+
+  img {
+    padding: 1rem 1.5rem;
+  }
+}
