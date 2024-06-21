@@ -6,11 +6,9 @@ function banner($accion)
     <div class="bloque_banner">
         <div class="banners">
             <div class="galeria">
-                <div><img src="images/banners/banner-limalocal-2022_0.jpg"></div>
-                <div><img src="images/banners/banner-limalocal-2022_1.jpg"></div>
-                <div><img src="images/banners/banner-limalocal-2022_2.jpg"></div>
-                <div><img src="images/banners/banner-limalocal-2022_3.jpg"></div>
-                <div><img src="images/banners/banner-limalocal-2022_4.jpg"></div>
+                <div><img src="images/banners/banner-limalocal-2024-1.jpg"></div>
+                <div><img src="images/banners/banner-limalocal-2024-2.jpg"></div>
+                <div><img src="images/banners/banner-limalocal-2024-3.jpg"></div>
             </div>
             <script type="text/javascript" src="js/slick/slick.min.js"></script>
             <script type="text/javascript">

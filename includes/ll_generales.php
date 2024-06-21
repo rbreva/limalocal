@@ -171,14 +171,7 @@ function formulario()
                 <div class="reclame">¿Qué día prefieres que te contactemos?:</div>
             </div>
             <div class="dato">
-                <input 
-                    type="date" 
-                    id="start" 
-                    name="fecha_cont" 
-                    value="<?php echo $hoy ?>" 
-                    min="<?php echo $hoy ?>" 
-                    required
-                >
+                <input type="date" id="start" name="fecha_cont" value="<?php echo $hoy ?>" min="<?php echo $hoy ?>" required>
             </div>
             <div class="check">
                 <input type="radio" name="negocio_txt" value="fisicayredes" checked>
@@ -275,101 +268,9 @@ function clientes()
     <div class="banner_sec">
         <h2>Nuestros clientes</h2>
         <div class="secciones">
-            <div>
-                <a href="https://www.shop-cocojolie.com/" target="_blank" alt="cocojolie">
-                    <img src="images/clientes/coco-jolie.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://hibabeperu.com/" target="_blank" alt="hibabeperu">
-                    <img src="images/clientes/hibabeperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.idolatrymoda.com/" target="_blank" alt="idolatrymoda">
-                    <img src="images/clientes/idolatry.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.naharanow.com/" target="_blank" alt="naharanow">
-                    <img src="images/clientes/naharanow.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.teacherstore.pe/" target="_blank" alt="teacherstore">
-                    <img src="images/clientes/teacher.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.trekkinghouseperu.pe/" target="_blank" alt="trekkinghouseperu">
-                    <img src="images/clientes/trekking.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://desireperu.com/" target="_blank" alt="desireperu">
-                    <img src="images/clientes/desireperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://ingapijamas.com.pe/" target="_blank" alt="ingapijamas">
-                    <img src="images/clientes/ingapijamas.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://singularityperu.com/" target="_blank" alt="singularityperu">
-                    <img src="images/clientes/singularityperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://mienfermeratiendavirtual.com" target="_blank" alt="mienfermeratiendavirtual">
-                    <img src="images/clientes/mienfermeratiendavirtual.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://azucarmodas.com/" target="_blank" alt="azucarmodas">
-                    <img src="images/clientes/azucarmodas.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://ballabiopastas.com/" target="_blank" alt="ballabiopastas">
-                    <img src="images/clientes/ballabiopastas.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://saturnoperu.com/" target="_blank" alt="saturnoperu">
-                    <img src="images/clientes/saturnoperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://veradonna.pe/" target="_blank" alt="veradonna">
-                    <img src="images/clientes/veradonna.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://evanicperu.com/" target="_blank" alt="evanicperu">
-                    <img src="images/clientes/evanicperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://dummastore.com/" target="_blank" alt="dummastore">
-                    <img src="images/clientes/dummastore.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://lacasitadelsapo.com/" target="_blank" alt="lacasitadelsapo">
-                    <img src="images/clientes/lacasitadelsapo.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://kebeyafashion.com/" target="_blank" alt="kebeyafashion">
-                    <img src="images/clientes/kebeyafashion.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://naturezza.pe/" target="_blank" alt="naturezza">
-                    <img src="images/clientes/naturezza.jpg">
-                </a>
-            </div>
+        <?php
+        lista_clientes();
+        ?>
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
@@ -403,101 +304,9 @@ function clientes_solo()
     <div class="banner_sec">
         <h2>Nuestros clientes</h2>
         <div class="secciones">
-            <div>
-                <a href="https://www.shop-cocojolie.com/" target="_blank" alt="cocojolie">
-                    <img src="images/clientes/coco-jolie.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://hibabeperu.com/" target="_blank" alt="hibabeperu">
-                    <img src="images/clientes/hibabeperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.idolatrymoda.com/" target="_blank" alt="idolatrymoda">
-                    <img src="images/clientes/idolatry.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.naharanow.com/" target="_blank" alt="naharanow">
-                    <img src="images/clientes/naharanow.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.teacherstore.pe/" target="_blank" alt="teacherstore">
-                    <img src="images/clientes/teacher.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.trekkinghouseperu.pe/" target="_blank" alt="trekkinghouseperu">
-                    <img src="images/clientes/trekking.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://desireperu.com/" target="_blank" alt="desireperu">
-                    <img src="images/clientes/desireperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://ingapijamas.com.pe/" target="_blank" alt="ingapijamas">
-                    <img src="images/clientes/ingapijamas.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://singularityperu.com/" target="_blank" alt="singularityperu">
-                    <img src="images/clientes/singularityperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://mienfermeratiendavirtual.com" target="_blank" alt="mienfermeratiendavirtual">
-                    <img src="images/clientes/mienfermeratiendavirtual.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://azucarmodas.com/" target="_blank" alt="azucarmodas">
-                    <img src="images/clientes/azucarmodas.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://ballabiopastas.com/" target="_blank" alt="ballabiopastas">
-                    <img src="images/clientes/ballabiopastas.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://saturnoperu.com/" target="_blank" alt="saturnoperu">
-                    <img src="images/clientes/saturnoperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://veradonna.pe/" target="_blank" alt="veradonna">
-                    <img src="images/clientes/veradonna.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://evanicperu.com/" target="_blank" alt="evanicperu">
-                    <img src="images/clientes/evanicperu.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://dummastore.com/" target="_blank" alt="dummastore">
-                    <img src="images/clientes/dummastore.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://lacasitadelsapo.com/" target="_blank" alt="lacasitadelsapo">
-                    <img src="images/clientes/lacasitadelsapo.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://kebeyafashion.com/" target="_blank" alt="kebeyafashion">
-                    <img src="images/clientes/kebeyafashion.jpg">
-                </a>
-            </div>
-            <div>
-                <a href="https://naturezza.pe/" target="_blank" alt="naturezza">
-                    <img src="images/clientes/naturezza.jpg">
-                </a>
-            </div>
+        <?php
+        lista_clientes();
+        ?>
         </div>
         <script type="text/javascript" src="js/slick/slick.min.js"></script>
         <script type="text/javascript">
@@ -616,4 +425,112 @@ function mensaje_error($msj)
         <a href="https://www.limalocal.com/">Regresar</a>
     </div>
     <?php
+}
+
+function lista_clientes()
+{
+    $clientes = [
+        'Cocojolie' => [
+            'name' => "Cocojolie",
+            'url' => "https://shop-cocojolie.com/",
+            'img' => "coco-jolie.jpg"
+        ],
+        'Hi Babe Perú' => [
+            'name' => "Hi Babe Perú",
+            'url' => "https://hibabeperu.com/",
+            'img' => "hibabeperu.jpg"
+        ],
+        'Idolatry Moda' => [
+            'name' => "Idolatry Moda",
+            'url' => "https://idolatrymoda.com/",
+            'img' => "idolatrymoda.jpg"
+        ],
+        'Nahara Now' => [
+            'name' => "Nahara Now",
+            'url' => "https://naharanow.com/",
+            'img' => "naharanow.jpg"
+        ],
+        'Teacher Store' => [
+            'name' => "Teacher Store",
+            'url' => "https://teacherstore.pe/",
+            'img' => "teacherstore.jpg"
+        ],
+        'Inga Pijamas' => [
+            'name' => "Inga Pijamas",
+            'url' => "https://ingapijamas.com.pe/",
+            'img' => "ingapijamas.jpg"
+        ],
+        'Mi Enfermera Tienda Virtual' => [
+            'name' => "Mi Enfermera Tienda Virtual",
+            'url' => "https://mienfermeratiendavirtual.com",
+            'img' => "mienfermeratiendavirtual.jpg"
+        ],
+        'Azucar Modas' => [
+            'name' => "Azucar Modas",
+            'url' => "https://azucarmodas.com/",
+            'img' => "azucarmodas.jpg"
+        ],
+        'Veradonna' => [
+            'name' => "Veradonna",
+            'url' => "https://veradonna.pe/",
+            'img' => "veradonna.jpg"
+        ],
+        'Dumma Store' => [
+            'name' => "Dumma Store",
+            'url' => "https://dummastore.com/",
+            'img' => "dummastore.jpg"
+        ],
+        'Shandal Store' => [
+            'name' => "Shandal Store",
+            'url' => "https://shandalstore.com/",
+            'img' => "shandalstore.jpg"
+        ],
+        'Runaway' => [
+            'name' => "Runaway",
+            'url' => "https://runawayperu.com/",
+            'img' => "runawayperu.jpg"
+        ],
+        'Arisse' => [
+            'name' => "Arisse",
+            'url' => "https://arisseperu.com/",
+            'img' => "arisse.jpg"
+        ],
+        'Imágenes' => [
+            'name' => "Imágenes",
+            'url' => "https://imagenes.pe/",
+            'img' => "imagenesaqp.jpg"
+        ],
+        'Invit' => [
+            'name' => "Invit",
+            'url' => "https://invit.com.pe/",
+            'img' => "invit.jpg"
+        ],
+        'Reyborg' => [
+            'name' => "Reyborg",
+            'url' => "https://reyborg.com/",
+            'img' => "reyborg.jpg"
+        ],
+        'Uniformes Faryee' => [
+            'name' => "Uniformes Faryee",
+            'url' => "https://uniformesfaryee.com/",
+            'img' => "uniformesfaryee.jpg"
+        ],
+        'Barhub' => [
+            'name' => "Barhub",
+            'url' => "https://barhub.pe/",
+            'img' => "barhub.jpg"
+        ]
+    ];
+    foreach ($clientes as $cliente) {
+        $url = $cliente['url'];
+        $name = $cliente['name'];
+        $img = $cliente['img'];
+        ?>
+        <div>
+            <a href="<?php echo $url ?>" target="_blank" alt="<?php echo $name ?>">
+                <img src="images/clientes/<?php echo $img ?>">
+            </a>
+        </div>
+        <?php
+    }
 }
